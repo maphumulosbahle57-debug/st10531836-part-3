@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Wishlist — BALE Studios | Save Your Favourite Pieces</title>
+  <!-- Primary SEO -->
+  <meta name="description" content="Save your favourite BALE Studios pieces to your personal wishlist. Keep track of the luxury clothing you love and revisit them anytime.">
+  <meta name="keywords" content="BALE Studios wishlist, save luxury clothing, favourite fashion pieces SA, BALE Studios collection">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.balestudios.co.za/wishlist.html">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BALE Studios PTY Ltd">
+  <meta property="og:title" content="Your Wishlist — BALE Studios | Save Your Favourite Pieces">
+  <meta property="og:description" content="Save your favourite BALE Studios pieces to your personal wishlist. Keep track of the luxury clothing you love and revisit them anytime.">
+  <meta property="og:url" content="https://www.balestudios.co.za/wishlist.html">
+  <meta property="og:image" content="https://www.balestudios.co.za/images/logo resized.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="javascript/script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="logo-section">
+      <img src="images/logo resized.png" alt="BALE Studios Logo">
+      <div>
+        <h2>BALE Studios PTY Ltd</h2>
+        <p><em>"Where luxury is felt."</em></p>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="kidsspecialcollection.html">Kids</a></li>
+        <li><a href="mensclothes.html">Mens</a></li>
+        <li><a href="womansclothes.html">Women</a></li>
+        <li><a href="wishlist.html" class="active">Wishlist</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Your Wishlist</h1>
+    <p>Save the pieces you love. Your wishlist is stored in your browser — it'll be here next time you visit.</p>
+
+    <!-- Add item row -->
+    <div class="wishlist-add-row">
+      <div class="field-group">
+        <label for="wishlist-input">Add an item</label>
+        <input
+          type="text"
+          id="wishlist-input"
+          list="all-wishlist-items"
+          placeholder="Search or select a piece…"
+          autocomplete="off">
+        <datalist id="all-wishlist-items">
+          <option value="Little Boys Black Suit">
+          <option value="Little Boys Brown Suit">
+          <option value="Little Girls Faded Blue Dress">
+          <option value="Little Girls White Dress">
+          <option value="Nude Two Piece Suit">
+          <option value="Black Blazer">
+          <option value="Navy Jumpsuit">
+          <option value="Navy Blue Suit">
+          <option value="Navy Blue Suit — Slim Fit">
+          <option value="Toned Black Blazer">
+        </datalist>
+      </div>
+      <button type="button" id="wishlist-add-btn" class="btn-submit">Add to Wishlist</button>
+    </div>
+    <span class="field-error" id="wishlist-err"></span>
+
+    <!-- Wishlist items render here -->
+    <ul class="wishlist-list" id="wishlist-list" aria-label="Your saved items"></ul>
+
+    <p class="wishlist-empty" id="wishlist-empty">Your wishlist is empty — browse our collections and add your favourites.</p>
+
+    <button type="button" id="wishlist-clear-btn" class="btn-clear" style="display:none;">Clear Wishlist</button>
+  </main>
+
+  <footer>
+    <p>Call: 068 392 1319</p>
+    <p>Email: balestudios@gmail.com</p>
+    <p>All rights reserved &copy; BALE Studios PTY Ltd</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Enquiry — BALE Studios | Order and Sizing Questions</title>
+  <!-- Primary SEO -->
+  <meta name="description" content="Submit a product enquiry to BALE Studios. Ask about sizing, availability, custom orders, and delivery for our mens, womens, and kids luxury clothing collections.">
+  <meta name="keywords" content="BALE Studios product enquiry, luxury clothing order South Africa, custom suit enquiry Durban, clothing size enquiry, BALE Studios order">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.balestudios.co.za/enquiry.html">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BALE Studios PTY Ltd">
+  <meta property="og:title" content="Product Enquiry — BALE Studios | Order and Sizing Questions">
+  <meta property="og:description" content="Submit a product enquiry to BALE Studios. Ask about sizing, availability, custom orders, and delivery for our mens, womens, and kids luxury clothing collections.">
+  <meta property="og:url" content="https://www.balestudios.co.za/enquiry.html">
+  <meta property="og:image" content="https://www.balestudios.co.za/images/logo resized.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="javascript/script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="logo-section">
+      <img src="images/logo resized.png" alt="BALE Studios Logo">
+      <div>
+        <h2>BALE Studios PTY Ltd</h2>
+        <p><em>"Where luxury is felt."</em></p>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="enquiry.html" class="active">Enquiry</a></li>
+        <li><a href="kidsspecialcollection.html">Kids</a></li>
+        <li><a href="mensclothes.html">Mens</a></li>
+        <li><a href="womansclothes.html">Women</a></li>
+        <li><a href="wishlist.html">Wishlist</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Product Enquiry</h1>
+    <p>Interested in a specific piece? Fill in the form below and we'll get back to you within 24 hours.</p>
+
+    <div class="form-wrapper form-wrapper--wide">
+      <form id="enquiry-form" novalidate>
+
+        <!-- Personal details -->
+        <fieldset class="form-section">
+          <legend>Your Details</legend>
+
+          <div class="field-row">
+            <div class="field-group">
+              <label for="enq-name">Full Name <span class="required">*</span></label>
+              <input
+                type="text"
+                id="enq-name"
+                name="name"
+                placeholder="e.g. Amahle Dlamini"
+                autocomplete="name"
+                required
+                minlength="2"
+                maxlength="80">
+              <span class="field-error" id="enq-err-name"></span>
+            </div>
+
+            <div class="field-group">
+              <label for="enq-email">Email Address <span class="required">*</span></label>
+              <input
+                type="email"
+                id="enq-email"
+                name="email"
+                placeholder="e.g. amahle@example.com"
+                autocomplete="email"
+                required>
+              <span class="field-error" id="enq-err-email"></span>
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field-group">
+              <label for="enq-phone">Phone Number <span class="optional">(optional)</span></label>
+              <input
+                type="tel"
+                id="enq-phone"
+                name="phone"
+                placeholder="e.g. 082 000 0000"
+                autocomplete="tel"
+                pattern="^[0-9\s\+\-]{7,15}$">
+              <span class="field-error" id="enq-err-phone"></span>
+            </div>
+
+            <div class="field-group">
+              <label for="enq-preferred-contact">Preferred Contact Method <span class="required">*</span></label>
+              <select id="enq-preferred-contact" name="preferred_contact" required>
+                <option value="">— Select —</option>
+                <option value="email">Email</option>
+                <option value="phone">Phone call</option>
+                <option value="whatsapp">WhatsApp</option>
+              </select>
+              <span class="field-error" id="enq-err-contact"></span>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Product details -->
+        <fieldset class="form-section">
+          <legend>Product Details</legend>
+
+          <div class="field-row">
+            <div class="field-group">
+              <label for="enq-category">Category <span class="required">*</span></label>
+              <select id="enq-category" name="category" required>
+                <option value="">— Select —</option>
+                <option value="mens">Mens</option>
+                <option value="women">Women</option>
+                <option value="kids">Kids</option>
+              </select>
+              <span class="field-error" id="enq-err-category"></span>
+            </div>
+
+            <div class="field-group">
+              <label for="enq-item">Item Name <span class="required">*</span></label>
+              <input
+                type="text"
+                id="enq-item"
+                name="item"
+                list="all-items"
+                placeholder="e.g. Navy Blue Suit"
+                required>
+              <datalist id="all-items">
+                <option value="Little Boys Black Suit">
+                <option value="Little Boys Brown Suit">
+                <option value="Little Girls Faded Blue Dress">
+                <option value="Little Girls White Dress">
+                <option value="Nude Two Piece Suit">
+                <option value="Black Blazer">
+                <option value="Navy Jumpsuit">
+                <option value="Navy Blue Suit">
+                <option value="Navy Blue Suit — Slim Fit">
+                <option value="Toned Black Blazer">
+              </datalist>
+              <span class="field-error" id="enq-err-item"></span>
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field-group">
+              <label for="enq-size">Size <span class="required">*</span></label>
+              <select id="enq-size" name="size" required>
+                <option value="">— Select —</option>
+                <optgroup label="Standard">
+                  <option value="XS">XS</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="XXL">XXL</option>
+                </optgroup>
+                <optgroup label="Kids">
+                  <option value="2-3Y">2–3 Years</option>
+                  <option value="4-5Y">4–5 Years</option>
+                  <option value="6-7Y">6–7 Years</option>
+                  <option value="8-9Y">8–9 Years</option>
+                  <option value="10-12Y">10–12 Years</option>
+                </optgroup>
+              </select>
+              <span class="field-error" id="enq-err-size"></span>
+            </div>
+
+            <div class="field-group">
+              <label for="enq-qty">Quantity <span class="required">*</span></label>
+              <input
+                type="number"
+                id="enq-qty"
+                name="quantity"
+                min="1"
+                max="20"
+                placeholder="1"
+                required>
+              <span class="field-error" id="enq-err-qty"></span>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Additional notes -->
+        <fieldset class="form-section">
+          <legend>Additional Notes</legend>
+
+          <div class="field-group">
+            <label for="enq-notes">Any special requests or questions? <span class="optional">(optional)</span></label>
+            <textarea
+              id="enq-notes"
+              name="notes"
+              rows="4"
+              placeholder="e.g. custom colour, delivery timeline, gift wrapping…"
+              maxlength="800"></textarea>
+            <span class="char-count" id="enq-char-count">0 / 800</span>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn-submit">Submit Enquiry</button>
+
+        <p class="form-success" id="enq-form-success" aria-live="polite"></p>
+
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>Call: 068 392 1319</p>
+    <p>Email: balestudios@gmail.com</p>
+    <p>All rights reserved &copy; BALE Studios PTY Ltd</p>
+  </footer>
+
+</body>
+</html>
